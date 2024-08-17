@@ -1,0 +1,157 @@
+:root {
+    --dark-gray: #191B1D;
+    --light-gray: #232527;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--light-gray);
+    width: 100%;
+    height: 100vh;
+}
+
+#nav1 {
+    position: fixed;
+    background-color: var(--dark-gray);
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    width: 100%;
+}
+
+.logo {
+    font-size: 28px;
+    margin: 0 45px 0 16px;
+}
+
+.nav-list1 {
+    display: flex;
+    justify-content: space-between;
+    width: 26rem;
+}
+
+.nav-links{
+    list-style-type: none;
+    padding: 0 13px;
+    transition: 0.5s;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 15.5px;
+}
+
+.nav-link1:hover::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: white;
+    top: 37px;
+    left: 175px;
+    width: 74px;
+    height: 2px;
+}
+
+.nav-link2:hover::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: white;
+    top: 37px;
+    left: 250px;
+    width: 76px;
+    height: 2px;
+}
+
+.nav-link3:hover::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: white;
+    top: 37px;
+    left: 327px;
+    width: 123px;
+    height: 2px;
+}
+
+.nav-link4:hover::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: white;
+    top: 37px;
+    left: 451px;
+    width: 79px;
+    height: 2px;
+}
+
+.nav-link5:hover::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: white;
+    top: 37px;
+    left: 531px;
+    width: 72px;
+    height: 2px;
+}
+
+.search{
+    position: relative;
+    margin-left: 22px;
+    width: 21rem;
+    height: 68%;
+    border-radius: 8px;
+    background-color: #0A0B0C;
+    border: 1px #0A0B0C solid;
+}
+
+.search::placeholder { 
+    background-color: #0A0B0C;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 2px;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 28px;
+    height: 100%;
+    width: 391px;
+}
+
+.icon-container a{
+    color: white;
+}
+
+.robux::after {
+    content: "1 Million Robux";
+    position: relative;
+    width: 15px;
+    height: 10px;
+    margin: 0 0 0 10px;
+    font-size: 20px;
+    top: -5px;
+}
+
+.nav-icon:hover {
+    background-color: #303234;
+}
